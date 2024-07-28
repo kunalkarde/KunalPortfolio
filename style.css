@@ -1,0 +1,365 @@
+/* Existing CSS */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    color: #fff;
+}
+
+#typing-para {
+    font-size: 25px;
+    color: rgb(210, 171, 30);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+
+
+}
+
+.container {
+    width: 100%;
+    height: 300vh;
+    background-image: url('image/bgImage2.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 35px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding: 20px;
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+
+
+.logo a {
+    font-size: 40px;
+    text-decoration: none;
+}
+
+span {
+    color: #f9004d;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: 0.5s;
+    /* color: #333; */
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+}
+
+.login {
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.link .hire {
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+    padding: 9px 25px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.home-sci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 20px 15px 30px 0;
+    padding: 80px;
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn {
+    background: #000;
+    border-radius: 6px;
+    padding: 9px 25px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.content {
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.content h2 {
+    font-size: 60px;
+}
+
+.content p {
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+a {
+    color: #fff;
+}
+
+.link {
+    margin-top: 30px;
+}
+
+.hire {
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+    padding: 9px 25px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.link .hire:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .tab-content {
+        width: 90%;
+    }
+}
+
+/* Skills Section CSS */
+.skills-section {
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+    padding: 80px;
+}
+
+/* .skills-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+} */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.section {
+    margin-top: 90px;
+    /* Adjust according to your design */
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 100%;
+    background: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.progress.html {
+    width: 90%;
+    background: #e34c26;
+}
+
+.progress.css {
+    width: 85%;
+    background: #264de4;
+}
+
+.progress.javascript {
+    width: 80%;
+    background: #f7df1e;
+    color: #000;
+}
+
+.progress.angular {
+    width: 75%;
+    background: #dd1b16;
+}
+
+.progress.springboot {
+    width: 70%;
+    background: #6db33f;
+}
+
+.progress.java {
+    width: 80%;
+    background: #007396;
+}
+
+.progress.csharp {
+    width: 70%;
+    background: #68217a;
+}
+
+.progress.aspnet {
+    width: 75%;
+    background: #0078d7;
+}
+
+.progress.sql {
+    width: 85%;
+    background: #00758f;
+}
+
+.progress.bootstrap {
+    width: 80%;
+    background: #563d7c;
+}
+
+@media screen and (max-width: 1024px) {
+    .skill-card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skill-card {
+        width: calc(100% - 40px);
+    }
+}
+
+/* Projects Section CSS */
+.projects-section {
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-live {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f9004d;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-live:hover {
+    background: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .project-card {
+        width: calc(100% - 20px);
+    }
+}
